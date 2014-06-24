@@ -121,7 +121,7 @@ yy11:
 
   }
 
-  return out - filename;
+  return static_cast<int>(out - filename);
 }
 
 bool DepfileParserDMD::Parse(string* content, string* err) {
